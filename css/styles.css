@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: antiquewhite;
+}
+  
+.emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: rgba(145, 61, 224, 0.548);
+}
+  
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+}
+  
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.icon{
+    font-size: 4rem;   
+}
+.emojis{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "ican ican" 
+    "emoji emoji"
+    "emoji emoji";
+    gap:20px;
+}
+.emojis:nth-child(1){
+    grid-area: emoji;
+    order: 1; 
+}
+.emojis:nth-child(2){
+    grid-area: emoji;
+    order: 2;
+}
+.emojis:nth-child(3){
+    grid-area: emoji;
+    order: 3;
+}
+.emojis:nth-child(4){
+    grid-area: emoji;
+    order: 4;
+}
+a{
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: rgba(146, 61, 226, 0.981);
+}
+
+.emojis span {
+    display: block;
+    text-align: center;  
+}
+/**/

@@ -31,7 +31,6 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-    "ican ican" 
     "emoji emoji"
     "emoji emoji";
     gap:20px;
@@ -64,5 +63,27 @@ a:hover{
 .emojis span {
     display: block;
     text-align: center;  
+}
+.emoji{
+    display:flex;
+    flex-direction: column;
+}
+
+.emoji{
+    flex: 1;
+    order: 0;
+}
+.emoji{
+    flex: 2;
+    order: 0;
+
+}
+.emoji{
+    flex: 3;
+    order: 0;
+}
+.emoji{
+    flex: 4;
+    order: 0;
 }
 /*help plz*/

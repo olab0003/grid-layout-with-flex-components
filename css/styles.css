@@ -1,18 +1,18 @@
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     background-color: antiquewhite;
 }
   
-.emoji {
+.emoji{
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
     background-color: rgba(145, 61, 224, 0.548);
 }
   
-.emoji h2 {
+.emoji h2{
     margin: 0;
     border-bottom: 2px solid #ccc;
 }
@@ -23,17 +23,23 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    margin-top: auto;
+    order: 4;
 }
 .icon{
-    font-size: 4rem;   
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    order: 1;
 }
+/**/
 .emojis{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 2, 1fr;
     grid-template-areas:
     "emoji emoji"
     "emoji emoji";
-    gap:20px;
+    gap:15px;
 }
 .emojis:nth-child(1){
     grid-area: emoji;
@@ -51,6 +57,10 @@ body {
     grid-area: emoji;
     order: 4;
 }
+.emoji{
+    display: flex;
+    flex-direction: column;
+}
 a{
     color: black;
     padding: 10px 10px;
@@ -60,30 +70,11 @@ a:hover{
     background-color: rgba(146, 61, 226, 0.981);
 }
 
-.emojis span {
-    display: block;
-    text-align: center;  
+.emoji h2{
+    display: flex;
+    order: 2;
 }
-.emoji{
-    display:flex;
-    flex-direction: column;
+.emoji p{
+    order: 3;
 }
-
-.emoji{
-    flex: 1;
-    order: 0;
-}
-.emoji{
-    flex: 2;
-    order: 0;
-
-}
-.emoji{
-    flex: 3;
-    order: 0;
-}
-.emoji{
-    flex: 4;
-    order: 0;
-}
-/*help plz*/
+/*help me plz*/

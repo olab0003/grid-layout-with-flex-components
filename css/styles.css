@@ -57,6 +57,7 @@ body{
     grid-area: emoji;
     order: 4;
 }
+/* emoji move and hover*/
 .emoji{
     display: flex;
     flex-direction: column;
